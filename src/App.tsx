@@ -4,11 +4,11 @@ import styled from 'styled-components';
 import { StyledButton } from './components/Button.styled';
 import { Menu } from './components/Menu.styled';
 import { myTheme } from './styles/Theme.styled';
-// import { OtherButton } from './components/Button.styled';
 
 
-//in <StyledButton>, as="a" means it creates tag <a> for href 
-//shortcut to make ul and li -> ul>li*3>a --> tab
+
+//in <StyledButton>, as="a" means it creates tag <a> for href.
+//shortcut to make ul and li -> ul>li*3>a --> tab.
 function App() {
   return (
     <div className="App">
@@ -24,7 +24,7 @@ function App() {
         <StyledButton as="a" href="some-link" fontSize={"20px"}>Link to</StyledButton>
         {/* <StyledButton color={"green"} fontSize={"20px"}>Hello</StyledButton>
         <StyledButton fontSize={"30px"}>Hello2</StyledButton> */}
-        {/* <OtherButton>Other button</OtherButton> */}
+       
 
         <StyledButton color={myTheme.colors.primary} active buttonType={"primary"}>Hello</StyledButton>
         <StyledButton color={myTheme.colors.secondary} buttonType={"outlined"}>Hello2</StyledButton>
